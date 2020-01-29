@@ -40,10 +40,8 @@
 /.yardopts
 /spec/
 /.vscode/
-.DS_Store
 .fasterer.yml
 .overcommit.yml
-.project
 .puppet-lint.rc
 .rspec
 .rubocop.yml
