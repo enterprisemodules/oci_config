@@ -1,0 +1,37 @@
+oci_tenant {'ohiservicecenter':
+  tenancy_ocid => 'ocid1.tenancy.oc1..aaaaaaaab2wwl5n5py5tf7hny4xtseyenjqpnb6u6545hrtjugdlnortl2eq',
+  user_ocid    => 'ocid1.user.oc1..aaaaaaaakf6gl4i3dfgymxskxiuw4xdxtkful2rwpql4p5tgxweb5xucm6oq',
+  fingerprint  => 'aa:9a:2e:7f:37:06:3d:d4:fb:83:39:bc:96:21:f8:7f',
+  region       => 'eu-frankfurt-1',
+  facts        => [],
+  private_key  => "
+-----BEGIN RSA PRIVATE KEY-----
+MIIEpAIBAAKCAQEAyGfcU79Bh80PjWfN6qiI7QekO3zw0h7uRphupAItKwsIkITs
+L+/mxiLkMyAu/PoxmvwyVfeoFHYdCK3LrptoYS4r2XmD0eKRqJ4m8lYcd5xlXXo2
+DET4JF45Y4ibjqLp5ptigcmzAFA+vtUtVzph1oTeo0RJQ99qlE8JA1KuzZKiOvEf
+28o7qjxfOKg6QdGBl1Uqo/Vuoz3h8OXJayLuMJU8lu98dihaZGazEVsI3bKQUVAZ
+KFjMMcXW2nszF57Usu0AG3vF3Ui1Lu2mHAMPwCKpcXcdN9djNVwBy5z5XOnPhXLy
+ETAEBtRVL9GAIfpNcWTT6LvxfP47MKoYd2NycQIDAQABAoIBAQCtK0Hxg9RmOkV0
+FPyUBmm7F91MIhweFOgkTFdelRrelLwj1RgaHBy3nTK/EtJHexIeMEp2infMpntU
+IolcKaG6R6FQXHYRiMwAfhh9UvdqS9QzQAUv+PDKzDiez05LpG6k/CPUrqtkW/K8
+B40UULh2G34eakU8xvNbkCfjnTC7JLA40hTgiVB4OqMgQfVwOCfLI6rWYeBcJgAF
+ZAmhNEY7dsuXzWJZjB9lbCBPLztUmHNuS14QYsropiEhHqkZsf5EOd+bEKVCd3qY
+dGn5cmLLZsiIjMx4uBfWivVeBUzxYK81uyaSxk2WGkKMkyfdViHo70ACbQESDx9o
+I1BoqIZ5AoGBAOlGHew4hdRYXbwj3KuK/Gp7mjy5zvhRoAKs7miUPIpE/dxQZFrB
+bisHq8Nv5Xonc0S4KTAQjQ5L+SF/+ULvwpwiLUG7VmqmuHXW0mA/84xQIioRvn/V
+G7jaRoBJvmsbLrp8iMuHL04gbZgaWqeJJDchefmiu+7EoLzQtg7uSW9LAoGBANvu
+AbFQ39frl1wMyfDDvGYant2hnnPw3aN4WbbVTNQ7BaxapYWmz5J0iadsFRYMsMw2
+1cFuOa9vMXbD3W75ZuKZ6oSgI1Rhzc3FBUhrPAo7npUOvh3BB5comDtxa6W+Gjp/
+27qBvDaUrdpyGeRgGmV7DCWbEEcl1aKBrrmxfkOzAoGBAN87lk8EGC4JEkqFFxui
+OcO83PDX71R66GEnFE9H7Fd1hmpbFG41RTQwdxLj9fpb3lcY1XGFpTbVRWfli6ee
+weGgYybQG/ab7VH3bgNlr6/Kz6bqrB6w1YKkf2stJuhgbutPWalLiN1+8uHn9nD1
+MI8BnjRiou3vhNKr+E15gxTZAoGAcQijgBGz6lKgaWP9SiwfoU6fRgOx3571GvZZ
+DboVEaMAKHQyTD3Ow1P4B79qGvoMx/iK5i6ToVIB1yuVnFq8gUxgFygC4HSgBNj0
+/SJ4Kj44JB3+omY6U3s+upZxoC7TZiuer/3L0TWbIQGxwwmNp4iVVqKavCZ65VnH
+hpLt9TcCgYAiWYt5gTY2jeNk8wGh/jQmM6uzwDpt6g7E1VgLINaEmIQNwlWc+ril
+uM3sX84SLp/2JNauffLDIREMSShE2RwqZu6uABCp4aoTqHgNXQaDlCBw0osTSZBn
+ZqQDR4o/H9naYGybfjurauRoSoOEFjSSce0ShO1JE8bv18tyt+kmmQ==
+-----END RSA PRIVATE KEY-----"
+  }
+
+
