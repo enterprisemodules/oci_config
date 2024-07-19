@@ -9,11 +9,11 @@ require_relative '../puppet_x/enterprisemodules/oci/monkey_patches/hash'
 require_relative '../puppet_x/enterprisemodules/oci/monkey_patches/string'
 
 def instance_path
-  '/opc/v1/instance/'
+  '/opc/v2/instance/'
 end
 
 def vnic_path
-  '/opc/v1/vnics/'
+  '/opc/v2/vnics/'
 end
 
 def get_data(path)
