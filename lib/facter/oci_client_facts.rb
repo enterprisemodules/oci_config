@@ -17,8 +17,9 @@ def vnic_path
 end
 
 def get_data(path)
-  response = Net::HTTP.start('169.254.169.254', 80, :read_timeout => 0.5, :open_timeout => 0.5, Authorization => "Bearer Oracle") do |http|
+  response = Net::HTTP.start('169.254.169.254', 80, :read_timeout => 0.5, :open_timeout => 0.5) do |http|
     http.read_timeout = 0.5
+    http.add_field('Authorization', 'Bearer Oracle')
     http.get(path)
   end
   json_data = response.body
