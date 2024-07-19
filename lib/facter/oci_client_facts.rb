@@ -7,28 +7,13 @@ require 'net/http'
 require 'json'
 require_relative '../puppet_x/enterprisemodules/oci/monkey_patches/hash'
 require_relative '../puppet_x/enterprisemodules/oci/monkey_patches/string'
-# Checks whether v1 uri is available, if not use v2.
-def check_uri(uri)
-  begin
-    response = Net::HTTP.get_response(uri)
-    return response.code.to_i == 200
-  rescue StandardError
-    return false
-  end
-end
-
-if check_uri(URI('http://169.254.169.254/opc/v1/instance/'))
-  version = "v1"
-else
-  version = "v2"
-end
 
 def instance_path
-  "/opc/#{version}/instance/"
+  '/opc/v2/instance/'
 end
 
 def vnic_path
-  "/opc/#{version}/vnics/"
+  '/opc/v2/vnics/'
 end
 
 def add_authorization_header(request)
@@ -36,16 +21,12 @@ def add_authorization_header(request)
 end
 
 def get_data(path)
-  if version == 'v2'
-    request = Net::HTTP::Get.new(URI("http://169.254.169.254#{path}"))
-    add_authorization_header(request)
-  end
+  request = Net::HTTP::Get.new(URI("http://169.254.169.254#{path}"))
+  add_authorization_header(request)
   response = Net::HTTP.start('169.254.169.254', 80, :read_timeout => 0.5, :open_timeout => 0.5) do |http|
     http.read_timeout = 0.5
     http.get(path)
-    if version == 'v2'
-      http.request(request)
-    end
+    http.request(request)
   end
   json_data = response.body
   begin
