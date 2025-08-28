@@ -17,7 +17,7 @@ def vnic_path
 end
 
 def add_authorization_header(request)
-  request['Authorization'] = "Bearer Oracle"
+  request['Authorization'] = 'Bearer Oracle'
 end
 
 def get_data(path)
